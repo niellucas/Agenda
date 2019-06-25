@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 24/06/2019 23:04:20 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="br.com.agenda.model.Contato" table="contato" catalog="agenda" optimistic-lock="version">
+        <id name="idContato" type="java.lang.Integer">
+            <column name="idContato" />
+            <generator class="identity" />
+        </id>
+        <property name="nome" type="string">
+            <column name="nome" length="50" not-null="true" />
+        </property>
+        <property name="cargo" type="string">
+            <column name="cargo" length="30" not-null="true" />
+        </property>
+        <property name="empresa" type="string">
+            <column name="empresa" length="30" not-null="true" />
+        </property>
+        <property name="dataAniversario" type="string">
+            <column name="dataAniversario" length="30" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
